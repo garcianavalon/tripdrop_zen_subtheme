@@ -1,0 +1,233 @@
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+/* line 10, ../sass/nodes.scss */
+div.view-wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1em;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 16, ../sass/nodes.scss */
+article.node {
+  /* Node wrapper */
+  /*Se lo aplicamos a articulos solo*/
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 21, ../sass/nodes.scss */
+.preview article.node {
+  /* Preview of the content before submitting new or updated content */
+  /* background-color: #ffffea; */
+  /* Drupal core uses a #ffffea background */
+}
+/* line 25, ../sass/nodes.scss */
+article.node .node-title {
+  /* Node title */
+}
+/* line 28, ../sass/nodes.scss */
+article.node .node-title a,
+article.node .node-title a:visited,
+article.node .node-title a:active {
+  color: #FF9A00 !important;
+  /*Por defecto color naranja*/
+}
+/* line 33, ../sass/nodes.scss */
+article.node .user-picture {
+  /* The picture of the node author */
+}
+/* line 36, ../sass/nodes.scss */
+article.node .submitted {
+  /* The "posted by" information */
+}
+/* line 39, ../sass/nodes.scss */
+article.node .content {
+  /* Node's content wrapper */
+}
+/* line 43, ../sass/nodes.scss */
+article.node ul.links {
+  /* Node links. See also the ul.links declaration in the pages.css. */
+}
+/* line 46, ../sass/nodes.scss */
+article.node .field-label {
+  /*Titulos secundarios*/
+  font-weight: bold;
+  color: #b5d04c;
+  /*TODO extraer como variable*/
+  font-size: 113%;
+}
+/* line 51, ../sass/nodes.scss */
+article.node .fieldset-legend {
+  font-weight: bold;
+  font-size: 113%;
+}
+
+/* line 57, ../sass/nodes.scss */
+.node-promoted {
+  /* A node that has been promoted to the front page */
+}
+
+/* line 60, ../sass/nodes.scss */
+.node-sticky {
+  /* A sticky node (displayed before others in a list) */
+}
+
+/* line 63, ../sass/nodes.scss */
+.node-by-viewer {
+  /* A node created by the current user */
+}
+
+/* line 66, ../sass/nodes.scss */
+.node-teaser {
+  /* A node displayed as teaser */
+}
+
+/*
+ * All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+/* line 74, ../sass/nodes.scss */
+.node-about-us-node {
+  padding-top: 26px;
+}
+/* line 77, ../sass/nodes.scss */
+.node-about-us-node div.field-type-image {
+  float: right;
+  position: relative;
+  right: -10px;
+  top: -60px;
+}
+/* line 84, ../sass/nodes.scss */
+.node-about-us-node div.field-type-image img {
+  border-radius: 1em;
+}
+/* line 88, ../sass/nodes.scss */
+.node-about-us-node div.field-name-field-subtitle {
+  color: #ffcc00;
+  font-size: 185%;
+  margin-bottom: 10px;
+  font-family: 'Comfortaa', cursive;
+}
+
+/* line 96, ../sass/nodes.scss */
+.node-webform {
+  /* El nodo del formulario de contacto */
+  padding-top: 26px;
+}
+/* line 99, ../sass/nodes.scss */
+.node-webform div.field-type-image {
+  float: right;
+  position: relative;
+  right: -10px;
+  top: -60px;
+}
+/* line 105, ../sass/nodes.scss */
+.node-webform div.field-type-image img {
+  border-radius: 1em;
+}
+/* line 109, ../sass/nodes.scss */
+.node-webform div.field-name-title-field {
+  color: #00cBcc;
+  font-size: 185%;
+  margin-bottom: 10px;
+  font-family: 'Comfortaa', cursive;
+}
+/* line 115, ../sass/nodes.scss */
+.node-webform form.webform-client-form {
+  width: 60%;
+  border-style: none;
+}
+/* line 118, ../sass/nodes.scss */
+.node-webform form.webform-client-form legend {
+  display: none;
+}
+
+/* line 124, ../sass/nodes.scss */
+.node-how-to-help-node {
+  padding-bottom: 20px;
+}
+/* line 126, ../sass/nodes.scss */
+.node-how-to-help-node div.field-type-image {
+  float: right;
+  position: relative;
+  top: 250px;
+  left: 1px;
+}
+/* line 131, ../sass/nodes.scss */
+.node-how-to-help-node div.field-type-image img {
+  border-radius: 1em;
+}
+/* line 135, ../sass/nodes.scss */
+.node-how-to-help-node div.field-name-field-subtitle {
+  color: #ce3800;
+  font-size: 185%;
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: 10px;
+  border-radius: 0.8em 0.8em 0 0;
+  display: block;
+  background-color: #000;
+  padding-left: 15px;
+  margin-left: -15px;
+  /*Compensar el padding del block*/
+  margin-bottom: 15px;
+  /*para separar el resto del contenido del block*/
+}
+/* line 148, ../sass/nodes.scss */
+.node-how-to-help-node div.field-name-field-subtitle div.field-items {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 153, ../sass/nodes.scss */
+.node-how-to-help-node h2 {
+  font-size: 125%;
+  font-family: 'Comfortaa', cursive;
+  color: #ce3800;
+}
+/* line 158, ../sass/nodes.scss */
+.node-how-to-help-node div.field-name-field-text {
+  width: 49%;
+}
+
+/* line 164, ../sass/nodes.scss */
+.node-petition h2.node-title {
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  border-radius: 0.8em 0.8em 0 0;
+  display: block;
+  background-color: #000;
+  padding-left: 15px;
+  margin-left: -20px;
+  /*Compensar el padding*/
+  margin-right: -20px;
+  /*Compensar el padding*/
+  margin-bottom: 15px;
+  /*para separar el resto del contenido*/
+}
+
+/* line 178, ../sass/nodes.scss */
+.node-unpublished {
+  /* Unpublished nodes */
+  /* background-color: #fff4f4; */
+  /* Drupal core uses a #fff4f4 background */
+}
+/* line 181, ../sass/nodes.scss */
+.node-unpublished p.unpublished {
+  /* The word "Unpublished" displayed underneath the content. */
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+}

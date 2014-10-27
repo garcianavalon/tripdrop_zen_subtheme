@@ -1,0 +1,184 @@
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+
+@import "base";
+
+div.view-wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1em;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+article.node { /* Node wrapper */ /*Se lo aplicamos a articulos solo*/
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  .preview & { /* Preview of the content before submitting new or updated content */
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+  }
+
+  .node-title { /* Node title */
+    a,
+    a:visited,
+    a:active  {
+      color:#FF9A00 !important; /*Por defecto color naranja*/
+    }
+  }
+
+  .user-picture { /* The picture of the node author */
+  }
+
+  .submitted { /* The "posted by" information */
+  }
+
+  .content { /* Node's content wrapper */
+
+  }
+
+  ul.links { /* Node links. See also the ul.links declaration in the pages.css. */
+  }
+
+  .field-label { /*Titulos secundarios*/
+    font-weight: bold;
+    color: rgb(181,208,76);/*TODO extraer como variable*/
+    font-size: 113%;
+  }
+  .fieldset-legend {
+    font-weight: bold;
+    font-size: 113%;
+  }
+}
+
+.node-promoted { /* A node that has been promoted to the front page */
+}
+
+.node-sticky { /* A sticky node (displayed before others in a list) */
+}
+
+.node-by-viewer { /* A node created by the current user */
+}
+
+.node-teaser { /* A node displayed as teaser */
+}
+
+/*
+ * All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+.node-about-us-node {
+  padding-top: 26px;
+
+  div.field-type-image {
+
+    float: right;
+    position: relative;
+    right: -10px;
+    top:-60px;
+
+    img {
+      border-radius: 1em;
+    }
+  }
+  div.field-name-field-subtitle {
+    color:#ffcc00;
+    font-size: 185%;
+    margin-bottom: 10px;
+    font-family: 'Comfortaa', cursive;
+  }
+
+}
+.node-webform { /* El nodo del formulario de contacto */
+  padding-top: 26px;
+
+  div.field-type-image {
+    float: right;
+    position: relative;
+    right: -10px;
+    top:-60px;
+
+    img {
+      border-radius: 1em;
+    }
+  }
+  div.field-name-title-field {
+    color:#00cBcc;
+    font-size: 185%;
+    margin-bottom: 10px;
+    font-family: 'Comfortaa', cursive;
+  }
+  form.webform-client-form {
+    width: 60%;
+    border-style: none;
+    legend {
+      display:none;
+    }
+  }
+
+}
+.node-how-to-help-node {
+  padding-bottom: 20px;
+  div.field-type-image {
+    float: right;
+    position: relative;
+    top:250px;
+    left:1px;
+    img {
+      border-radius: 1em;
+    }
+  }
+  div.field-name-field-subtitle {
+    color:#ce3800;
+    font-size: 185%;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 10px;
+    border-radius: 0.8em 0.8em 0 0;
+    display: block;
+    background-color: #000;
+    padding-left: 15px;
+    margin-left: -15px; /*Compensar el padding del block*/
+    margin-bottom: 15px;/*para separar el resto del contenido del block*/
+
+
+    div.field-items {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  h2 {
+    font-size: 125%;
+    font-family: 'Comfortaa', cursive;
+    color:#ce3800;
+  }
+  div.field-name-field-text {
+    width: 49%;
+  }
+}
+.node-petition {
+
+  h2.node-title {
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 0.8em 0.8em 0 0;
+    display: block;
+    background-color: #000;
+    padding-left: 15px;
+    margin-left: -20px; /*Compensar el padding*/
+    margin-right: -20px; /*Compensar el padding*/
+    margin-bottom: 15px;/*para separar el resto del contenido*/
+  }
+}
+
+
+.node-unpublished { /* Unpublished nodes */
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+
+  p.unpublished { /* The word "Unpublished" displayed underneath the content. */
+    @include unpublished-div;
+  }
+}
