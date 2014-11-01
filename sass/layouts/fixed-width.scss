@@ -58,7 +58,7 @@ $zen-auto-include-item-base: false;
 #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
-.region-top-right,
+#top-right,
 #footer {
   @include zen-grid-item-base();
 }
@@ -90,7 +90,7 @@ $zen-auto-include-item-base: false;
 /*
  * Top left region for user menu/lang
  */
-.region-top-right { /* Span 1 column, starting in 5th column from left. */
+#top-right { /* Span 1 column, starting in 5th column from left. */
   @include zen-grid-item(5.5, 19);
 }
 /*

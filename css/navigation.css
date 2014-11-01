@@ -47,7 +47,7 @@ li a.active {
 #navigation .block {
   margin-bottom: 0;
 }
-/* line 55, ../sass/navigation.scss */
+/* line 54, ../sass/navigation.scss */
 #navigation .block-menu .block-title,
 #navigation .block-menu-block .block-title {
   position: absolute !important;
@@ -56,7 +56,7 @@ li a.active {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* line 60, ../sass/navigation.scss */
+/* line 59, ../sass/navigation.scss */
 #navigation ul.links,
 #navigation ul.menu {
   /* Menu block links */
@@ -91,6 +91,15 @@ li a.active {
 /* line 90, ../sass/navigation.scss */
 #secondary-menu ul.links {
   padding-left: 20px;
+}
+/* line 93, ../sass/navigation.scss */
+#secondary-menu a,
+#secondary-menu a:visited,
+#secondary-menu a:hover,
+#secondary-menu a:focus,
+#secondary-menu a:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*

@@ -7,7 +7,7 @@
   /* Wrapper for a form element (or group of form elements) and its label */
   margin: 1.5em 0;
 }
-/* line 14, ../sass/forms.scss */
+/* line 12, ../sass/forms.scss */
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
@@ -38,13 +38,13 @@
   /* The descriptive help text (separate from the label) */
   font-size: 85%;
 }
-/* line 39, ../sass/forms.scss */
+/* line 38, ../sass/forms.scss */
 .form-checkboxes .form-item, .form-radios .form-item {
   /* Pack groups of checkboxes and radio buttons closer together */
   margin: 0;
   /* Drupal core uses "0.4em 0" */
 }
-/* line 46, ../sass/forms.scss */
+/* line 42, ../sass/forms.scss */
 .form-item select,
 .form-item input,
 .form-item button,
@@ -71,7 +71,7 @@
   margin-top: 5px;
 }
 
-/* line 67, ../sass/forms.scss */
+/* line 66, ../sass/forms.scss */
 .container-inline div,
 .container-inline label {
   /* Inline labels and form divs */
@@ -86,15 +86,14 @@
 /* line 75, ../sass/forms.scss */
 a.button {
   /* Buttons used by contrib modules like Media */
-  -webkit-appearance: button;
   -moz-appearance: button;
-  appearance: button;
+  -webkit-appearance: button;
 }
 
 /*
  * Password confirmation
  */
-/* line 84, ../sass/forms.scss */
+/* line 83, ../sass/forms.scss */
 .password-parent,
 .confirm-parent {
   margin: 0;
@@ -128,7 +127,7 @@ a.button {
   margin-bottom: 0;
   /* Position OpenID's ul next to the rest of the links. */
 }
-/* line 114, ../sass/forms.scss */
+/* line 113, ../sass/forms.scss */
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* The "Log in using OpenID" link. */
@@ -203,7 +202,7 @@ td.menu-disabled {
   /*font-size: 100%;
   /*color: #fff;*/
 }
-/* line 194, ../sass/forms.scss */
+/* line 193, ../sass/forms.scss */
 #contact-site-form input.form-text,
 #contact-site-form .form-textarea-wrapper {
   width: 99%;
