@@ -94,22 +94,23 @@ article.node .fieldset-legend {
  * receive a "node-my-custom-type" class.
  */
 /* line 74, ../sass/nodes.scss */
-.node-about-us-node {
+.node-static-content {
+  /* about us */
   padding-top: 26px;
 }
 /* line 77, ../sass/nodes.scss */
-.node-about-us-node div.field-type-image {
+.node-static-content div.field-type-image {
   float: right;
   position: relative;
-  right: -10px;
+  right: -20px;
   top: -60px;
 }
 /* line 84, ../sass/nodes.scss */
-.node-about-us-node div.field-type-image img {
+.node-static-content div.field-type-image img {
   border-radius: 1em;
 }
 /* line 88, ../sass/nodes.scss */
-.node-about-us-node div.field-name-field-subtitle {
+.node-static-content div.field-name-title-field {
   color: #ffcc00;
   font-size: 185%;
   margin-bottom: 10px;
@@ -125,7 +126,7 @@ article.node .fieldset-legend {
 .node-webform div.field-type-image {
   float: right;
   position: relative;
-  right: -10px;
+  right: -20px;
   top: -60px;
 }
 /* line 105, ../sass/nodes.scss */
