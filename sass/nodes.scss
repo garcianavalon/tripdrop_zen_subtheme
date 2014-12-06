@@ -71,14 +71,14 @@ article.node { /* Node wrapper */ /*Se lo aplicamos a articulos solo*/
  * it is. If you create a new content type called "my-custom-type", it will
  * receive a "node-my-custom-type" class.
  */
-.node-about-us-node {
+.node-static-content { /* about us */
   padding-top: 26px;
 
   div.field-type-image {
 
     float: right;
     position: relative;
-    right: -10px;
+    right: -20px;
     top:-60px;
 
     img {
@@ -99,7 +99,7 @@ article.node { /* Node wrapper */ /*Se lo aplicamos a articulos solo*/
   div.field-type-image {
     float: right;
     position: relative;
-    right: -10px;
+    right: -20px;
     top:-60px;
 
     img {
