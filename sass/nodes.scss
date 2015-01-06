@@ -18,6 +18,9 @@ article.node { /* Node wrapper */ /*Se lo aplicamos a articulos solo*/
   border-radius: 1em;
   padding-left: 20px;
   padding-right: 20px;
+  fieldset {
+    float: left;
+  }
   .preview & { /* Preview of the content before submitting new or updated content */
     /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
   }
@@ -41,6 +44,9 @@ article.node { /* Node wrapper */ /*Se lo aplicamos a articulos solo*/
   }
 
   .submitted { /* The "posted by" information */
+    float: right;
+    font-size: 13px;
+    margin-top: -10px;
   }
 
   .content { /* Node's content wrapper */
@@ -58,6 +64,9 @@ article.node { /* Node wrapper */ /*Se lo aplicamos a articulos solo*/
   .fieldset-legend {
     font-weight: bold;
     font-size: 113%;
+  }
+  .field-type-geofield { /* the geolocation map */
+    float: right;
   }
 }
 

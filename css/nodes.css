@@ -22,49 +22,56 @@ article.node {
   padding-right: 20px;
 }
 /* line 21, ../sass/nodes.scss */
+article.node fieldset {
+  float: left;
+}
+/* line 24, ../sass/nodes.scss */
 .preview article.node {
   /* Preview of the content before submitting new or updated content */
   /* background-color: #ffffea; */
   /* Drupal core uses a #ffffea background */
 }
-/* line 25, ../sass/nodes.scss */
+/* line 28, ../sass/nodes.scss */
 article.node .node-title {
   /* Node title */
 }
-/* line 26, ../sass/nodes.scss */
+/* line 29, ../sass/nodes.scss */
 article.node .node-title a,
 article.node .node-title a:visited,
 article.node .node-title a:active {
   color: #FF9A00 !important;
   /*Por defecto color naranja*/
 }
-/* line 32, ../sass/nodes.scss */
+/* line 35, ../sass/nodes.scss */
 article.node div.field-name-field-images {
   /* Multiple Images field */
   display: inline-block;
 }
-/* line 34, ../sass/nodes.scss */
+/* line 37, ../sass/nodes.scss */
 article.node div.field-name-field-images div.field-item {
   float: left;
   margin: 12px;
 }
-/* line 40, ../sass/nodes.scss */
+/* line 43, ../sass/nodes.scss */
 article.node .user-picture {
   /* The picture of the node author */
 }
-/* line 43, ../sass/nodes.scss */
+/* line 46, ../sass/nodes.scss */
 article.node .submitted {
   /* The "posted by" information */
+  float: right;
+  font-size: 13px;
+  margin-top: -10px;
 }
-/* line 46, ../sass/nodes.scss */
+/* line 52, ../sass/nodes.scss */
 article.node .content {
   /* Node's content wrapper */
 }
-/* line 50, ../sass/nodes.scss */
+/* line 56, ../sass/nodes.scss */
 article.node ul.links {
   /* Node links. See also the ul.links declaration in the pages.css. */
 }
-/* line 53, ../sass/nodes.scss */
+/* line 59, ../sass/nodes.scss */
 article.node .field-label {
   /*Titulos secundarios*/
   font-weight: bold;
@@ -72,28 +79,33 @@ article.node .field-label {
   /*TODO extraer como variable*/
   font-size: 113%;
 }
-/* line 58, ../sass/nodes.scss */
+/* line 64, ../sass/nodes.scss */
 article.node .fieldset-legend {
   font-weight: bold;
   font-size: 113%;
 }
+/* line 68, ../sass/nodes.scss */
+article.node .field-type-geofield {
+  /* the geolocation map */
+  float: right;
+}
 
-/* line 64, ../sass/nodes.scss */
+/* line 73, ../sass/nodes.scss */
 .node-promoted {
   /* A node that has been promoted to the front page */
 }
 
-/* line 67, ../sass/nodes.scss */
+/* line 76, ../sass/nodes.scss */
 .node-sticky {
   /* A sticky node (displayed before others in a list) */
 }
 
-/* line 70, ../sass/nodes.scss */
+/* line 79, ../sass/nodes.scss */
 .node-by-viewer {
   /* A node created by the current user */
 }
 
-/* line 73, ../sass/nodes.scss */
+/* line 82, ../sass/nodes.scss */
 .node-teaser {
   /* A node displayed as teaser */
 }
@@ -103,23 +115,23 @@ article.node .fieldset-legend {
  * it is. If you create a new content type called "my-custom-type", it will
  * receive a "node-my-custom-type" class.
  */
-/* line 81, ../sass/nodes.scss */
+/* line 90, ../sass/nodes.scss */
 .node-static-content {
   /* about us */
   padding-top: 26px;
 }
-/* line 84, ../sass/nodes.scss */
+/* line 93, ../sass/nodes.scss */
 .node-static-content div.field-type-image {
   float: right;
   position: relative;
   right: -20px;
   top: -60px;
 }
-/* line 91, ../sass/nodes.scss */
+/* line 100, ../sass/nodes.scss */
 .node-static-content div.field-type-image img {
   border-radius: 1em;
 }
-/* line 95, ../sass/nodes.scss */
+/* line 104, ../sass/nodes.scss */
 .node-static-content div.field-name-title-field {
   color: #ffcc00;
   font-size: 185%;
@@ -127,55 +139,55 @@ article.node .fieldset-legend {
   font-family: 'Comfortaa', cursive;
 }
 
-/* line 103, ../sass/nodes.scss */
+/* line 112, ../sass/nodes.scss */
 .node-webform {
   /* El nodo del formulario de contacto */
   padding-top: 26px;
 }
-/* line 106, ../sass/nodes.scss */
+/* line 115, ../sass/nodes.scss */
 .node-webform div.field-type-image {
   float: right;
   position: relative;
   right: -20px;
   top: -60px;
 }
-/* line 112, ../sass/nodes.scss */
+/* line 121, ../sass/nodes.scss */
 .node-webform div.field-type-image img {
   border-radius: 1em;
 }
-/* line 116, ../sass/nodes.scss */
+/* line 125, ../sass/nodes.scss */
 .node-webform div.field-name-title-field {
   color: #00cBcc;
   font-size: 185%;
   margin-bottom: 10px;
   font-family: 'Comfortaa', cursive;
 }
-/* line 122, ../sass/nodes.scss */
+/* line 131, ../sass/nodes.scss */
 .node-webform form.webform-client-form {
   width: 60%;
   border-style: none;
 }
-/* line 125, ../sass/nodes.scss */
+/* line 134, ../sass/nodes.scss */
 .node-webform form.webform-client-form legend {
   display: none;
 }
 
-/* line 131, ../sass/nodes.scss */
+/* line 140, ../sass/nodes.scss */
 .node-how-to-help-node {
   padding-bottom: 20px;
 }
-/* line 133, ../sass/nodes.scss */
+/* line 142, ../sass/nodes.scss */
 .node-how-to-help-node div.field-type-image {
   float: right;
   position: relative;
   top: 250px;
   left: 1px;
 }
-/* line 138, ../sass/nodes.scss */
+/* line 147, ../sass/nodes.scss */
 .node-how-to-help-node div.field-type-image img {
   border-radius: 1em;
 }
-/* line 142, ../sass/nodes.scss */
+/* line 151, ../sass/nodes.scss */
 .node-how-to-help-node div.field-name-field-subtitle {
   color: #ce3800;
   font-size: 185%;
@@ -190,23 +202,23 @@ article.node .fieldset-legend {
   margin-bottom: 15px;
   /*para separar el resto del contenido del block*/
 }
-/* line 155, ../sass/nodes.scss */
+/* line 164, ../sass/nodes.scss */
 .node-how-to-help-node div.field-name-field-subtitle div.field-items {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 160, ../sass/nodes.scss */
+/* line 169, ../sass/nodes.scss */
 .node-how-to-help-node h2 {
   font-size: 125%;
   font-family: 'Comfortaa', cursive;
   color: #ce3800;
 }
-/* line 165, ../sass/nodes.scss */
+/* line 174, ../sass/nodes.scss */
 .node-how-to-help-node div.field-name-field-text {
   width: 49%;
 }
 
-/* line 171, ../sass/nodes.scss */
+/* line 180, ../sass/nodes.scss */
 .node-petition h2.node-title {
   margin: 0;
   font-family: 'Comfortaa', cursive;
@@ -222,13 +234,13 @@ article.node .fieldset-legend {
   /*para separar el resto del contenido*/
 }
 
-/* line 185, ../sass/nodes.scss */
+/* line 194, ../sass/nodes.scss */
 .node-unpublished {
   /* Unpublished nodes */
   /* background-color: #fff4f4; */
   /* Drupal core uses a #fff4f4 background */
 }
-/* line 188, ../sass/nodes.scss */
+/* line 197, ../sass/nodes.scss */
 .node-unpublished p.unpublished {
   /* The word "Unpublished" displayed underneath the content. */
   height: 0;
