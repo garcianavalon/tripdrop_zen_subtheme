@@ -29,6 +29,13 @@ article.node { /* Node wrapper */ /*Se lo aplicamos a articulos solo*/
       color:#FF9A00 !important; /*Por defecto color naranja*/
     }
   }
+  div.field-name-field-images { /* Multiple Images field */
+    display: inline-block;
+    div.field-item {
+      float: left;
+      margin: 12px;
+    }
+  }
 
   .user-picture { /* The picture of the node author */
   }
@@ -99,7 +106,7 @@ article.node { /* Node wrapper */ /*Se lo aplicamos a articulos solo*/
   div.field-type-image {
     float: right;
     position: relative;
-    right: -20px;
+    right: -20px; 
     top:-60px;
 
     img {
